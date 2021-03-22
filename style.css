@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+/* variables */
+:root {
+    /* primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+   font-family: "Spartan", sans-serif; 
+   background: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+   background-position: top 0 left 0, bottom 0 right 0;
+   background-repeat: no-repeat;
+   background-color:var(--white)
+   height:100vh;
+}
+
+/* CONTAINER */
+
+.container{
+  width:100%;
+  margin: auto;
+  padding: 140px 90px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* TOP BOX */
+
+.topbox{
+  display:flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  
+}
+
+/* HEADER TEXT START */
+
+ .leftsection{
+   width:90%;
+ }
+
+
+
+ .title{
+/*    width:63%; 
+   min-width:60%; */
+   line-height: 1;
+   color:var(--very-dark-magenta);
+ }
+
+ .title h1{
+  font-size: 3.2em;
+ }
+
+ .toptext{
+   margin-top:10px;
+   /*width:63%;*/
+ }
+
+ .toptext p{
+  font-size: 1.05em;
+  font-weight: 300;
+  color:var(--dark-grayish-magenta);
+
+ }
+
+ /* HEADER TEXT END */
+
+
+
+ /* RATING BOX START */
+
+  .rightsection{
+    /* width:70%; */
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+  .ratingcontain{
+    width:80%;
+    min-width:40%;
+    /* height:48px; */
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+
+  .ratingcontain:nth-child(1){
+    margin-left: -20%;
+  }
+
+  .ratingcontain:nth-child(2){
+    margin-left:0%;
+    margin-top:0.5%;
+    margin-bottom: 0.5;
+  }
+
+  .ratingcontain:nth-child(3){
+    margin-left:20%;
+  }
+
+  .cardinfo{
+    min-width:40%;
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:0.65em;
+    font-weight: 600;
+    color:var(--very-dark-magenta);
+    border-radius: 5px;
+  }
+
+  
+  .starbox{
+    width:30%;
+    min-width:15%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* RATING BOX END */
+
+
+
+
+  /* BOTTOM CONTAINER START */
+
+  .bottomsection{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+
+  /* PROFILE BOXES START */
+
+
+  .box{
+    width:32%;
+    min-width:25%;
+    border-radius:5px;
+    background-color: var(--very-dark-magenta);
+    padding: 50px 20px;
+    display:flex;
+    
+}
+
+
+.box:nth-child(1){
+}
+
+.box:nth-child(2){
+  margin-top: 10px;
+  margin-right:2%;
+  margin-left:2%;
+}
+
+.box:nth-child(3){
+  margin-top: 20px;
+}
+
+
+
+.propic{
+  width:42px;
+  height:42px;
+  position:absolute;
+}
+
+.propic img{
+  width:100%;
+  height:auto;
+  border-radius: 50%;
+
+}
+
+ .wrapper{
+  width: 100%;
+  position: relative;
+}
+
+
+  .name{
+    width:50%;
+    margin-left: 55px;
+}
+
+.first{
+   font-size: 1em;
+   font-weight: 500;
+   color:var(--white);
+}
+
+.purp{
+   font-size:1em ;
+   font-weight: 500;
+   color:var(--soft-pink);
+}
+
+
+.cardinfo{
+  font-size: 0.7em;
+}
+
+.info{
+  margin-top:10px;
+}
+
+.info p{
+  font-size:0.8em;
+  font-weight:400;
+  color:white;
+}
+
+
+
+/* PROFILE BOX END */
+
+/* BOTTOM CONTAINER END */
+
+
+
+/****************** TABLET START ****************/
+/******** TOP SECTION MEDIA QUERIES START *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+/******** BOTTOM SECTION MEDIA QUERIES *********/
+
+
+@media (max-width:888px){
+
+  .container{
+    width:100%;
+    margin: auto;
+    padding: 70px 60px ;
+ }
+
+ .title h1{
+  font-size: 2.5em;
+  text-align: center;
+
+ }
+
+ .toptext{
+   margin-top:10px;
+   /*width:63%;*/
+ }
+
+ .toptext p{
+  font-size: 0.9em;
+  font-weight: 300;
+  width:100%;
+  text-align: center;
+  color:var(--dark-grayish-magenta);
+
+ }
+
+ .rightsection{
+   margin-top: 30px;
+ }
+
+      
+    .topbox{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ratingcontain{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content:space-around;
+      align-items:center ;
+      width:100%;
+      padding:15px 0;
+    }
+
+    .ratingcontain:nth-child(1){
+      margin-left: 0%;
+    }
+  
+    .ratingcontain:nth-child(2){
+      margin-left:0%;
+      margin-top:2%;
+      margin-bottom: 2%;
+    }
+  
+    .ratingcontain:nth-child(3){
+      margin-left:0%;
+    }
+
+    .starbox{
+      padding:0;
+      margin:1%;
+    }
+
+    .cardinfo{
+      display:flex;
+      align-items:center;
+    }
+
+  /* Bottom Part */
+
+  .bottomsection{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .box{
+    width:100%;
+    min-width:50%;
+    border-radius:5px;
+    background-color: var(--very-dark-magenta);
+    padding: 50px 20px;  
+}
+
+
+
+
+
+
+}
+/****************** TABLET END ****************/
+/******** TOP SECTION MEDIA QUERIES END *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+
+
+
+
+/****************** PHONE ****************/
+/******** TOP SECTION MEDIA QUERIES END *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+
+@media (max-width:330px){
+
+  .container{
+    width:100%;
+    margin: auto;
+    padding: 60px 60px ;
+ }
+  
+  .title h1{
+    font-size: 1.45em;
+    text-align: center;
+    font-weight: 800;
+   }
+
+   .toptext p{
+    font-size: 0.65em; 
+}
+
+
+.first{
+  font-size: 0.65em;
+  font-weight: 500;
+  color:var(--white);
+}
+
+.purp{
+  font-size:0.65em ;
+  font-weight: 500;
+  color:var(--soft-pink);
+}
+
+.info{
+ 
+ color:var(--white);
+ margin-top:20px;
+}
+
+.info p{
+ font-size:0.60em ;
+ font-weight: 400;
+}
+
+.cardinfo{
+  font-size:0.45em;
+  font-weight: 700;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+/****************** PHONE ****************/
+/******** TOP SECTION MEDIA QUERIES END *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+/******** TOP SECTION MEDIA QUERIES *********/
+
+
+
+
+
+
+
